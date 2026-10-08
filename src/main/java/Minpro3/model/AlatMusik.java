@@ -1,6 +1,6 @@
-package Minpro2;
+package Minpro3.Model;
 
-public class AlatMusik {
+public abstract class AlatMusik implements DapatDitampilkan {
 
     private String idAlat;
     private String namaAlat;
@@ -10,12 +10,15 @@ public class AlatMusik {
 
     public AlatMusik(String idAlat, String namaAlat, String jenisAlat,
                      double hargaSewa, String status) {
+
         this.idAlat = idAlat;
         this.namaAlat = namaAlat;
         this.jenisAlat = jenisAlat;
         this.hargaSewa = hargaSewa;
         this.status = status;
     }
+
+    // Getter
 
     public String getIdAlat() {
         return idAlat;
@@ -37,6 +40,8 @@ public class AlatMusik {
         return status;
     }
 
+    // Setter
+
     public void setIdAlat(String idAlat) {
         this.idAlat = idAlat;
     }
@@ -57,11 +62,17 @@ public class AlatMusik {
         this.status = status;
     }
 
-    public void tampilkanData() {
-        System.out.println("ID Alat       : " + idAlat);
-        System.out.println("Nama Alat     : " + namaAlat);
-        System.out.println("Jenis Alat    : " + jenisAlat);
-        System.out.println("Harga Sewa    : Rp" + hargaSewa);
-        System.out.println("Status        : " + status);
+    public double hitungTotal(double hargaSewa, int lamaSewa) {
+        return hargaSewa * lamaSewa;
     }
+
+    public double hitungTotal(double hargaSewa, int lamaSewa, double diskon) {
+
+        double total = hargaSewa * lamaSewa;
+
+        return total - (total * diskon / 100);
+    }
+
+    @Override
+    public abstract void tampilkanData();
 }

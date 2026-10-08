@@ -1,4 +1,4 @@
-package Minpro2;
+package Minpro3.Model;
 
 public class Penyewaan {
 
@@ -8,8 +8,12 @@ public class Penyewaan {
     private int lamaSewa;
     private double totalHarga;
 
-    public Penyewaan(String idPenyewaan, String idPelanggan,
-                     String idAlat, int lamaSewa, double totalHarga) {
+    public Penyewaan(
+            String idPenyewaan,
+            String idPelanggan,
+            String idAlat,
+            int lamaSewa,
+            double totalHarga) {
 
         this.idPenyewaan = idPenyewaan;
         this.idPelanggan = idPelanggan;
@@ -17,6 +21,7 @@ public class Penyewaan {
         this.lamaSewa = lamaSewa;
         this.totalHarga = totalHarga;
     }
+
 
     public String getIdPenyewaan() {
         return idPenyewaan;
@@ -37,6 +42,7 @@ public class Penyewaan {
     public double getTotalHarga() {
         return totalHarga;
     }
+
 
     public void setIdPenyewaan(String idPenyewaan) {
         this.idPenyewaan = idPenyewaan;
@@ -59,6 +65,7 @@ public class Penyewaan {
     }
 
     public void tampilkanData() {
+
         System.out.println("ID Penyewaan : " + idPenyewaan);
         System.out.println("ID Pelanggan : " + idPelanggan);
         System.out.println("ID Alat      : " + idAlat);

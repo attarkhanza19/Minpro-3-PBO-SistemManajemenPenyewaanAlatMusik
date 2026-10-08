@@ -1,4 +1,4 @@
-package Minpro2;
+package Minpro3.Model;
 
 public class Pelanggan {
 
@@ -7,14 +7,18 @@ public class Pelanggan {
     private String noTelepon;
     private String alamat;
 
-    public Pelanggan(String idPelanggan, String namaPelanggan,
-                     String noTelepon, String alamat) {
+    public Pelanggan(
+            String idPelanggan,
+            String namaPelanggan,
+            String noTelepon,
+            String alamat) {
 
         this.idPelanggan = idPelanggan;
         this.namaPelanggan = namaPelanggan;
         this.noTelepon = noTelepon;
         this.alamat = alamat;
     }
+
 
     public String getIdPelanggan() {
         return idPelanggan;
@@ -31,6 +35,8 @@ public class Pelanggan {
     public String getAlamat() {
         return alamat;
     }
+
+    // Setter
 
     public void setIdPelanggan(String idPelanggan) {
         this.idPelanggan = idPelanggan;
@@ -49,6 +55,7 @@ public class Pelanggan {
     }
 
     public void tampilkanData() {
+
         System.out.println("ID Pelanggan : " + idPelanggan);
         System.out.println("Nama         : " + namaPelanggan);
         System.out.println("No. Telepon  : " + noTelepon);
