@@ -1,6 +1,6 @@
 package Minpro3.Model;
 
-public class AlatMusikElektrik extends AlatMusik {
+public class AlatMusikElektrik extends AlatMusik implements DapatDitampilkan {
 
     private int daya;
 

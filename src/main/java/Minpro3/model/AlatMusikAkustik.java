@@ -1,6 +1,6 @@
 package Minpro3.Model;
 
-public class AlatMusikAkustik extends AlatMusik {
+public class AlatMusikAkustik extends AlatMusik implements DapatDitampilkan {
 
     private String bahan;
 

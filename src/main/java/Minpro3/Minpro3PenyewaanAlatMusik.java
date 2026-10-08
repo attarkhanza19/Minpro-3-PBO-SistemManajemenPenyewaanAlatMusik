@@ -1,4 +1,4 @@
-1package Minpro3;
+package Minpro3;
 
 import java.util.Scanner;
 import Minpro3.Controller.PenyewaanController;
@@ -61,11 +61,6 @@ public class Minpro3PenyewaanAlatMusik {
         input.close();
     }
 
-
-    // =====================================================
-    // MENU ALAT MUSIK
-    // =====================================================
-
     public static void menuAlat(
             MenuView view,
             PenyewaanController controller) {
@@ -115,10 +110,6 @@ public class Minpro3PenyewaanAlatMusik {
         } while (pilihan != 5);
     }
 
-
-    // =====================================================
-    // TAMBAH ALAT
-    // =====================================================
 
     public static void tambahAlat(
             MenuView view,
@@ -242,10 +233,6 @@ public class Minpro3PenyewaanAlatMusik {
     }
 
 
-    // =====================================================
-    // UBAH ALAT
-    // =====================================================
-
     public static void ubahAlat(
             MenuView view,
             PenyewaanController controller) {
@@ -327,11 +314,6 @@ public class Minpro3PenyewaanAlatMusik {
         }
     }
 
-
-    // =====================================================
-    // HAPUS ALAT
-    // =====================================================
-
     public static void hapusAlat(
             MenuView view,
             PenyewaanController controller) {
@@ -365,11 +347,6 @@ public class Minpro3PenyewaanAlatMusik {
             );
         }
     }
-
-
-    // =====================================================
-    // MENU PELANGGAN
-    // =====================================================
 
     public static void menuPelanggan(
             MenuView view,
@@ -420,11 +397,6 @@ public class Minpro3PenyewaanAlatMusik {
 
         } while (pilihan != 5);
     }
-
-
-    // =====================================================
-    // TAMBAH PELANGGAN
-    // =====================================================
 
     public static void tambahPelanggan(
             MenuView view,
@@ -485,11 +457,6 @@ public class Minpro3PenyewaanAlatMusik {
         }
     }
 
-
-    // =====================================================
-    // UBAH PELANGGAN
-    // =====================================================
-
     public static void ubahPelanggan(
             MenuView view,
             PenyewaanController controller) {
@@ -542,11 +509,6 @@ public class Minpro3PenyewaanAlatMusik {
         }
     }
 
-
-    // =====================================================
-    // HAPUS PELANGGAN
-    // =====================================================
-
     public static void hapusPelanggan(
             MenuView view,
             PenyewaanController controller) {
@@ -570,11 +532,6 @@ public class Minpro3PenyewaanAlatMusik {
             );
         }
     }
-
-
-    // =====================================================
-    // MENU PENYEWAAN
-    // =====================================================
 
     public static void menuPenyewaan(
             MenuView view,
@@ -625,11 +582,6 @@ public class Minpro3PenyewaanAlatMusik {
 
         } while (pilihan != 5);
     }
-
-
-    // =====================================================
-    // TAMBAH PENYEWAAN
-    // =====================================================
 
     public static void tambahPenyewaan(
             MenuView view,
@@ -755,11 +707,6 @@ public class Minpro3PenyewaanAlatMusik {
         }
     }
 
-
-    // =====================================================
-    // UBAH PENYEWAAN
-    // =====================================================
-
     public static void ubahPenyewaan(
             MenuView view,
             PenyewaanController controller) {
@@ -847,11 +794,6 @@ public class Minpro3PenyewaanAlatMusik {
             );
         }
     }
-
-
-    // =====================================================
-    // HAPUS PENYEWAAN
-    // =====================================================
 
     public static void hapusPenyewaan(
             MenuView view,

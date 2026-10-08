@@ -18,7 +18,6 @@ public abstract class AlatMusik implements DapatDitampilkan {
         this.status = status;
     }
 
-    // Getter
 
     public String getIdAlat() {
         return idAlat;
@@ -40,7 +39,6 @@ public abstract class AlatMusik implements DapatDitampilkan {
         return status;
     }
 
-    // Setter
 
     public void setIdAlat(String idAlat) {
         this.idAlat = idAlat;

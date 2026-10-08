@@ -349,7 +349,7 @@ public class PenyewaanController {
         return true;
     }
     
-        public void lihatAlat() {
+            public void lihatAlat() {
 
         System.out.println("\n===== DAFTAR ALAT MUSIK =====");
 
@@ -359,7 +359,8 @@ public class PenyewaanController {
         }
 
         for (AlatMusik alat : daftarAlat) {
-            alat.tampilkanData();
+            DapatDitampilkan data = (DapatDitampilkan) alat;
+            data.tampilkanData();
             System.out.println("----------------------------");
         }
     }

@@ -36,8 +36,6 @@ public class Pelanggan {
         return alamat;
     }
 
-    // Setter
-
     public void setIdPelanggan(String idPelanggan) {
         this.idPelanggan = idPelanggan;
     }
